@@ -2,7 +2,7 @@
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('images/background.jpg'); /* Background image */
+    background-image: url('background.jpg'); /* Background image */
     background-size: cover; /* Cover the entire viewport */
     background-position: center; /* Center the image */
     color: #645b5b;
