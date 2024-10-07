@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>makumi airports</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="images/logo.png" class="img-fluid" />
+                 </div>
+                 <div class="col">
+                 <div class="d-flex">
+                    <div >
+                        <h1>Makumi Airports</h1>
+                        
+                    
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="btn btn-outline-light" data-toggle="modal" data-target="#loginModal">Login</button>
+        <a class="navbar-brand ml-3" href="#">
+            <span class="home-icon">🏠</span> Home
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">news</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<section id="carousel" class="container mt-5">
+    <h2 class="text-center">Airport Views</h2>
+    <div id="airportCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/airporthd3.avif" class="d-block w-100" alt="Airport View 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/airporthd4.avif" class="d-block w-100" alt="Airport View 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/airporthd6.avif" class="d-block w-100" alt="Airport View 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#airportCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#airportCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<section id="services" class="container mt-5">
+    <h2>Our Services</h2>
+    <p>Makumi Airport Ltd offers a range of essential services to ensure a smooth travel experience...</p>
+    
+    <div class="row">
+        <article class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/carrierhd.jpg" alt="Carrier Services" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Carrier</h5>
+                    <p class="card-text">Makumi Airport is a pivotal hub in the region, offering a range of carrier services...</p>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#carrierDetails">Details</button>
+                    <div id="carrierDetails" class="collapse">
+                        <p>Additional information about carrier services...</p>
+                    </div>
+                    <video width="100%" controls>
+                        <source src="images/airport.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </article>
+        
+        <article class="col-md-4 mb-4">
+            <div class="card">
+                <img src="images/airporthd2.avif" alt="Airport Transportation" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Transportation</h5>
+                    <p class="card-text">Transportation at Makumi Airport is designed to ensure seamless connectivity...</p>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#transportDetails">Details</button>
+                    <div id="transportDetails" class="collapse">
+                        <p>More about our transportation services...</p>
+                    </div>
+                    <video width="100%" controls>
+                        <source src="images/3747855-uhd_3840_2160_24fps.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </article>
+        
+        <article class="col-md-4 mb-4">
+            <h3>Quick Links</h3>
+            <img src="images/airporthd1.avif" alt="Airport Image" class="img-fluid mb-3">
+            <ul>
+                <li><a href="https://www.kaa.go.ke/port-health/?v=518f4a738816">Carrier</a></li>
+                <li><a href="#Transportation Services">Transportation</a></li>
+                <li><a href="https://www.kaa.go.ke/port-health/?v=518f4a738816">Medical</a></li>
+                <li><a href="#Currency Exchange">Currency Exchange</a></li>
+                <li><a href="#Wifi and Charging Stations">Wifi and Charging Stations</a></li>
+            </ul>
+        </article>
+    </div>
+</section>
+
+<section class="container mt-5">
+    <h2>Pricing Information</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Prices per kg</th>
+                <th>Flight Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>10$/kg</li>
+                        <li>15$/20kg</li>
+                        <li>34$/100kg</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Qatar Airways</li>
+                        <li>Ethiopian Airlines</li>
+                        <li>Fly Emirates</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="accordion" class="container mt-5">
+    <h2>Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What are the airport's operating hours?
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    The airport operates 24/7 to accommodate all flight schedules.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Are there any parking facilities?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Yes, there are both short-term and long-term parking options available.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container mt-5">
+    <h2>Contact Us</h2>
+    <form action="submit" method="post">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter 8 alphabets" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="resume">Resume</label>
+            <input type="file" id="resume" name="resume" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</section>
+
+<footer class="text-center mt-5">
+    <p>&copy; 2024 Makumi Airport Ltd. All rights reserved.</p>
+</footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="modal-username">Username</label>
+                        <input type="text" class="form-control" id="modal-username" placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password">Password</label>
+                        <input type="password" class="form-control" id="modal-password" placeholder="Enter your password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
